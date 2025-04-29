@@ -1,0 +1,140 @@
+<!--  
+Author: Cohen Cantrell
+Class: CIS-376
+Date: 1/23/2025
+-->
+<!-- Create a html document -->
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CohensPastProjects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+<link rel="stylesheet" href="styles/style.css">
+
+<!-- a <title>  -->
+<head>
+  <title>Cohen's Day Log</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Cohen's Day Log App 🦾</a>
+    
+<button id="login" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Login
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Please Enter Username and Password</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <textarea id="username" rows="1" cols="25" placeholder="Username"></textarea><br>
+        <textarea id="password" rows="1" cols="25" placeholder="Password"></textarea><br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Enter</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</nav>
+ 
+<!-- A list with content (raw data)  -->
+<h3>Usual Weekly Activities:</h3>
+  <ul>
+    <li>
+      <p>Classes</p>
+    </li>
+    <li>
+      <p>Work</p>
+    </li>
+    <li>
+      <p>Rugby Practice</p>
+    </li>
+    <li>
+      <p>Meetings</p>
+    </li>
+    <li>
+      <p>Resident Advisor Duties</p>
+    </li>
+    <li>
+      <p>Rugby Captain Duties</p>
+    </li>
+  </ul>
+
+<!-- A <form> to input new data  -->
+<ul>
+  <form id="logForm">
+    <li>
+      <label for="dateInfo"><h2>Please Enter Date:</h2></label><br>
+      <input type="date" id="dateInfo" name="birthday"><br>
+      <button id="submit">Submit Date</button><br>
+       
+   <li>
+     <label for="dailyAct"><h2>Please Enter Daily Activities</h2></label><br>
+     <textarea id="dailyAct" rows="8" cols="50" placeholder="Enter Daily Activities"></textarea><br>
+     <button id="submit">Submit Daily Info</button><br>
+    </li>
+  </form>
+</ul>
+
+<!-- Three links  -->
+<h3>Frequently Visited Destinations</h3>
+  <ul>
+    <li>
+      <p>School:
+        <a href="https://una.edu/" target="_blank">University of North Alabama</a>
+      </p>
+    </li>
+    <li>
+      <p>Work:
+        <a href="https://www.publix.com/locations/1409-renaissance-city-center" target="_blank">Publix Supermarket</a>
+      </p>
+    </li>
+    <li>
+      <p>Rugby Field:
+        <a href="https://florenceal.org/veterans-memorial-2/" target="_blank">Veterans Memorial Park</a>
+      </p>
+    </li>
+  </ul>
+
+<h3>Former Entries</h3>
+<li id="logDay" class="list-group-item"><strong></strong></li><br>
+
+<div class="footer">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center" id="links">
+      <ol>
+      <span class="text">&copy; Lake Frances Inc, 2025</span>
+      <span class="text"></span>
+      <!-- Links to Nu, Wave, source, github profile -->
+      <!--  Link to wireframe in a new tab -->
+      <!--   An easter egg via console     -->
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fccantrell2.github.io%2Fdev-charlie-project%2F" class="footer-link" target="_blank">Nu Validator</a>
+        <a href="https://wave.webaim.org/report#/https://ccantrell2.github.io/dev-charlie-project/" class="footer-link" target="_blank">WAVE</a>
+        <a href="https://github.com/ccantrell2" class='card-link' target="_blank">Github</a>
+        <a href="pages/cohensPastProjectsSource.html" class="card-link" target="_blank">Source</a>
+        <a href="https://drive.google.com/file/d/1mPtfQJqArDE7Rr_UFpehxSV6S9f-V3SP/view?usp=sharing" class="footer-link" target="_blank">Wireframe</a>
+        <a 
+    </ol>
+    </div>  
+  </footer>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script  src="scripts/script.js"></script>
+<script type="module" src="scripts/readLogData.js"></script>
+</body>
