@@ -65,7 +65,7 @@ Here is also an example of what insired my Bs5 modal login:<br>
 </p>
 
 <p align="left">
-<h2>Code I Think is Cool</h2>
+<h2>Code I Think is Cool💻</h2>
 I think this code from my project is pretty cool. It is a Javascript file that reads a JSON file and displays it in the DOM. The first section calls the function of logData. The second section creates a list of cards in which the data from the JSON file is placed in. I find it cool becuase I've never worked with a JSON file and It is cool how we can create an array of sets and present it in the DOM.
 
 ```Javascript
@@ -89,7 +89,7 @@ function displayLogData(logData) {
 <a href="https://github.com/ccantrell2/devGeorgeProject/blob/main/scripts/script.js" target="_blank">Cohen's Day Log Javascript</a>
 
 <p align="left">
-<h2>Future Ideas</h2>
+<h2>Future Ideas🔮</h2>
 <a href="https://github.com/ccantrell2/devGeorgeProject/issues/1#issue-3027860371" target="_blank">Future Ideas Issue</a>
 </p>
 
