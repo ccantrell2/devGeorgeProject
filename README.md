@@ -86,6 +86,7 @@ function displayLogData(logData) {
       `);
     });
 ```
+<a href="https://github.com/ccantrell2/devGeorgeProject/blob/main/scripts/script.js" target="_blank">Cohen's Day Log Javascript</a>
 
 <p align="left">
 <h2>Future Ideas</h2>
