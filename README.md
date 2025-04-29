@@ -7,6 +7,9 @@
 
 <p align="left">
   <h2>Attribution</h2>
-  https://getbootstrap.com/docs/5.0/components/modal/
-
+  * https://getbootstrap.com/docs/5.0/components/modal/
+  * https://codepen.io/barrycumbie/pen/LEPmgdB
+  * https://github.com/barrycumbie/jubilant-garbanzo-easy-read
+  * https://www.w3schools.com/tags/att_input_type_date.asp
+  * https://getbootstrap.com/docs/4.0/components/card/
 </p>
