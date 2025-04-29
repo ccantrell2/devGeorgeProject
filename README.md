@@ -25,6 +25,40 @@
 
 <img src="images/devGeorgeProject.png" alt="devGeorgeExample"><br>
 
+Here is a little example of my HTML code that makes my navbar:
+```HTML
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Cohen's Day Log App 🦾</a>
+
+<button id="login" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Login
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Please Enter Username and Password</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" id="username" class="form-control mb-2" placeholder="Username">
+        <input type="password" id="password" class="form-control mb-2" placeholder="Password">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Enter</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+  </div>
+</nav>
+```
+
 Here is also an example of what insired my Bs5 modal login:<br>
 <img src="images/exampleLogin.png" alt="UNA Login"><br>
 </p>
