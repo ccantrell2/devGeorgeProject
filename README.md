@@ -23,7 +23,10 @@
 <h2>Narrative📖</h2>
   I created this application to keep track of what I do everyday. I wanted to keep a kinda virtual diary, so I can go back and see what I did. I wanted to do this so I could be nostalgic if I wanted to or more importantly, I can go back and see if I did things that I was supposed to do. I decided to create this app for my first web dev project. It went well the first time, so i decided to bring it back for my last web dev project. Here is an example of what my app looks like:
 
-<img src="images/devGeorgeProject.png" alt="devGeorgeExample">
+<img src="images/devGeorgeProject.png" alt="devGeorgeExample"><br>
+
+Here is also an example of what insired my Bs5 modal login:
+<img src="images/exampleLogin.png" alt="UNA Login"><br>
 </p>
 
 <p align="left">
