@@ -1,15 +1,8 @@
-<!--  
-Author: Cohen Cantrell
-Class: CIS-376
-Date: 1/23/2025
--->
-<!-- Create a html document -->
-
 <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>devGeorgeProject</title>
+  <title>CohensPastProjects</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
 <link rel="stylesheet" href="styles/style.css">
@@ -23,7 +16,23 @@ Date: 1/23/2025
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Cohen's Day Log App 🦾</a>
-    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ol class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://drive.google.com/file/d/1mPtfQJqArDE7Rr_UFpehxSV6S9f-V3SP/view?usp=sharing" target="_blank">Wireframe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://github.com/ccantrell2" target="_blank">Github</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://github.com/ccantrell2/devGeorgeProject" target="_blank">Source Code</a>
+        </li>
+      </ol>
+    </div>
+
 <button id="login" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Login
 </button>
@@ -36,8 +45,8 @@ Date: 1/23/2025
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <textarea id="username" rows="1" cols="25" placeholder="Username"></textarea><br>
-        <textarea id="password" rows="1" cols="25" placeholder="Password"></textarea><br>
+        <input type="text" id="username" class="form-control mb-2" placeholder="Username">
+        <input type="password" id="password" class="form-control mb-2" placeholder="Password">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -45,6 +54,7 @@ Date: 1/23/2025
       </div>
     </div>
   </div>
+</div>
 </div>
     </div>
   </div>
@@ -86,6 +96,10 @@ Date: 1/23/2025
      <textarea id="dailyAct" rows="8" cols="50" placeholder="Enter Daily Activities"></textarea><br>
      <button id="submit">Submit Daily Info</button><br>
     </li>
+
+    <button onclick="loadData()">Load Sample</button>
+    <button id="expData">Export</button>
+
   </form>
 </ul>
 
@@ -118,15 +132,8 @@ Date: 1/23/2025
       <ol>
       <span class="text">&copy; Lake Frances Inc, 2025</span>
       <span class="text"></span>
-      <!-- Links to Nu, Wave, source, github profile -->
-      <!--  Link to wireframe in a new tab -->
-      <!--   An easter egg via console     -->
         <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fccantrell2.github.io%2Fdev-charlie-project%2F" class="footer-link" target="_blank">Nu Validator</a>
         <a href="https://wave.webaim.org/report#/https://ccantrell2.github.io/dev-charlie-project/" class="footer-link" target="_blank">WAVE</a>
-        <a href="https://github.com/ccantrell2" class='card-link' target="_blank">Github</a>
-        <a href="pages/cohensPastProjectsSource.html" class="card-link" target="_blank">Source</a>
-        <a href="https://drive.google.com/file/d/1mPtfQJqArDE7Rr_UFpehxSV6S9f-V3SP/view?usp=sharing" class="footer-link" target="_blank">Wireframe</a>
-        <a 
     </ol>
     </div>  
   </footer>
