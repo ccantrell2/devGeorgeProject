@@ -28,6 +28,7 @@
 <p align="left">
 <h2>Future Ideas</h2>
 <a href="https://github.com/ccantrell2/devGeorgeProject/issues/1#issue-3027860371" target="_blank">Future Ideas Issue</a>
+</p>
 
 
 
