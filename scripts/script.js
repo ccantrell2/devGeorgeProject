@@ -14,7 +14,7 @@ $(document).ready(function(){
   }
 );
 
-fetch('../data/logData.json')
+fetch('https://github.com/ccantrell2/devGeorgeProject/blob/main/data/logData.json')
 .then(response => {
     if (!response.ok) {
         throw new Error('Network response was not ok');
