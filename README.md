@@ -25,7 +25,7 @@
 
 <img src="images/devGeorgeProject.png" alt="devGeorgeExample"><br>
 
-Here is also an example of what insired my Bs5 modal login:
+Here is also an example of what insired my Bs5 modal login:<br>
 <img src="images/exampleLogin.png" alt="UNA Login"><br>
 </p>
 
