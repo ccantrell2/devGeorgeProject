@@ -12,6 +12,7 @@
   * https://github.com/barrycumbie/jubilant-garbanzo-easy-read<br>
   * https://www.w3schools.com/tags/att_input_type_date.asp<br>
   * https://getbootstrap.com/docs/4.0/components/card/<br>
+  * https://github.com/ccantrell2/devGeorgeProject/issues/2<br>
 </p>
 
 <p align="left">
