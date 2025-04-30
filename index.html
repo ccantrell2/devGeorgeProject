@@ -7,12 +7,13 @@
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
 <link rel="stylesheet" href="styles/style.css">
 
-<!-- a <title>  -->
+
 <head>
   <title>Cohen's Day Log</title>
 </head>
 <body>
 
+<!-- nav bar with hamburger menu  -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Cohen's Day Log App 🦾</a>
@@ -33,10 +34,12 @@
       </ol>
     </div>
 
+<!-- Login button  -->
 <button id="login" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Login
 </button>
 
+<!-- Bs5 modal for username and password  -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -122,9 +125,11 @@
     </li>
   </ul>
 
+<!-- section for JSON entry into DOM  -->
 <h3>Former Entries</h3>
 <li id="logDay" class="list-group-item"><strong></strong></li><br>
 
+<!-- page footer  -->
 <div class="footer">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center" id="links">
