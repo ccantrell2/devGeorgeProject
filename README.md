@@ -13,6 +13,7 @@
   * https://www.w3schools.com/tags/att_input_type_date.asp<br>
   * https://getbootstrap.com/docs/4.0/components/card/<br>
   * https://github.com/ccantrell2/devGeorgeProject/issues/2<br>
+  * https://www.w3schools.com/html/html_links_colors.asp<br>
 </p>
 
 <p align="left">
