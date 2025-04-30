@@ -46,6 +46,28 @@ function displayLogData(logData) {
         </div>
     `);
 
+     // creates new data card
+     $("#logForm").on("submit", function(e) {
+      e.preventDefault(); 
+  
+      const input = $("#dailyAct").val();
+  
+      if (input !== "") { 
+        const createdCard =(`
+          <div id="div${index}"class="card">
+            <div class="card-body">
+              <h5 class="card-title"><strong>${log.date}</strong></h5>
+              <p id="note${index}"class="card-text">${log.note}</p>
+              <button id="edit${index}" class="btn btn-primary">Edit</button> 
+              <button id="delete${index}" class="btn btn-primary">Delete</button >
+            </div>
+          </div>
+      `);
+        $("#cardContainer").append(createdCard);
+        $("#dailyAct").val(""); 
+      }
+    });
+
      // edit data
     $(`#edit${index}`).on('click', function() {
       const buttonId = $(this).attr('id');
@@ -71,7 +93,7 @@ function displayLogData(logData) {
 
 }
 
-// applie username to nav bar
+// applies username to nav bar
 $('#enterLogin').on('click', function() {
 console.log('button clicked');
 let uname = $('#username').val();
