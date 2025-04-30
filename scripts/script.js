@@ -1,6 +1,6 @@
 $(document).ready(function(){
    
-  
+    // change login button to logout
     $("#login").on("click", function(){
      
       let statusText = underConstruction("logout button");      
@@ -13,7 +13,7 @@ $(document).ready(function(){
     };
   }
 );
-
+// fetch JSON
 fetch('data/logData.json')
 .then(response => {
     if (!response.ok) {
@@ -29,6 +29,7 @@ fetch('data/logData.json')
     console.error('Fetch Error :-S', error);
 }); 
 
+// JSON written to the DOM
 function displayLogData(logData) {
   const container = $("#logDay");
   container.empty();
@@ -45,20 +46,20 @@ function displayLogData(logData) {
         </div>
     `);
 
+     // edit data
     $(`#edit${index}`).on('click', function() {
       const buttonId = $(this).attr('id');
-      // const index = buttonId.replace('activity', '');
-      // Add your edit functionality here
 
       $(this).prev('p').attr('contenteditable','true');
       console.log($(this).prev('p').attr('id'))
     
     }); 
 
+     // delete data
     $(`#delete${index}`).on('click', function() {
       const buttonId = $(this).attr('id');
      console.log(buttonId); 
-      $(`#div${index}`).hide(); //grab that div... OR remove it from your array  
+      $(`#div${index}`).hide();   
   
     }
       
@@ -70,9 +71,9 @@ function displayLogData(logData) {
 
 }
 
+// applie username to nav bar
 $('#enterLogin').on('click', function() {
 console.log('button clicked');
-//grab user name, but it somewhere else in dom
 let uname = $('#username').val();
 console.log(uname);
 $('#welcome').text('Welcome ' + uname);
