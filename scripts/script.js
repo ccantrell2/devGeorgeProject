@@ -89,7 +89,10 @@ function displayLogData(logData) {
      
   });
 
-
+  // export data
+    $('#expData').on('click', function() {
+      console.log(logData);
+    });
 
 }
 
