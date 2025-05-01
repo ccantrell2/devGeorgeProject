@@ -1,6 +1,6 @@
 $(document).ready(function(){
    
-    // change login button to logout
+  
     $("#login").on("click", function(){
      
       let statusText = underConstruction("logout button");      
@@ -13,7 +13,7 @@ $(document).ready(function(){
     };
   }
 );
-// fetch JSON
+
 fetch('data/logData.json')
 .then(response => {
     if (!response.ok) {
@@ -22,14 +22,13 @@ fetch('data/logData.json')
     return response.json(); 
 })
 .then(data => {
-    console.log(data);
+    //console.log(data);
     displayLogData(data.logData);
 })
 .catch(error => {
     console.error('Fetch Error :-S', error);
 }); 
 
-// JSON written to the DOM
 function displayLogData(logData) {
   const container = $("#logDay");
   container.empty();
@@ -46,8 +45,7 @@ function displayLogData(logData) {
         </div>
     `);
 
-     // creates new data card
-     $("#logForm").on("submit", function(e) {
+    $("#logForm").on("submit", function(e) {
       e.preventDefault(); 
   
       const input = $("#dailyAct").val();
@@ -68,20 +66,20 @@ function displayLogData(logData) {
       }
     });
 
-     // edit data
     $(`#edit${index}`).on('click', function() {
       const buttonId = $(this).attr('id');
+      // const index = buttonId.replace('activity', '');
+      // Add your edit functionality here
 
       $(this).prev('p').attr('contenteditable','true');
       console.log($(this).prev('p').attr('id'))
     
     }); 
 
-     // delete data
     $(`#delete${index}`).on('click', function() {
       const buttonId = $(this).attr('id');
      console.log(buttonId); 
-      $(`#div${index}`).hide();   
+      $(`#div${index}`).hide(); //grab that div... OR remove it from your array  
   
     }
       
@@ -89,17 +87,23 @@ function displayLogData(logData) {
      
   });
 
-  // export data
+ 
+  $('#enterLogin').on('click', function() {
+    console.log('button clicked');
+    //grab user name, but it somewhere else in dom
+    let uname = $('#username').val();
+    console.log(uname);
+    $('#welcome').text('Welcome ' + uname);
+    //$('#nav-item').text(uname);
+    }); 
+
+    // export data
     $('#expData').on('click', function() {
       console.log(logData);
     });
 
-   // applies username to nav bar
-$('#enterLogin').on('click', function() {
-console.log('button clicked');
-let uname = $('#username').val();
-console.log(uname);
-$('#welcome').text('Welcome ' + uname);
-}); 
 
 }
+
+
+
