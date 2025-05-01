@@ -7,13 +7,12 @@
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
 <link rel="stylesheet" href="styles/style.css">
 
-
+<!-- a <title>  -->
 <head>
   <title>Cohen's Day Log</title>
 </head>
 <body>
 
-<!-- nav bar with hamburger menu  -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Cohen's Day Log App 🦾</a>
@@ -36,14 +35,12 @@
         </li>
       </ol>
     </div>
-  </div>
+    </div>
 
-<!-- Login button  -->
 <button id="login" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Login
 </button>
 
-<!-- Bs5 modal for username and password  -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -57,7 +54,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Enter</button>
+        <button type="button" class="btn btn-primary" id="enterLogin">Enter</button>
       </div>
     </div>
   </div>
@@ -103,7 +100,7 @@
      <button id="submit">Submit</button><br>
     </li>
 
-    <button id="samData">Sample</button>
+    <button onclick="loadData()">Load Sample</button>
     <button id="expData">Export</button>
 
   </form>
@@ -131,19 +128,17 @@
     </li>
   </ul>
 
-<!-- section for JSON entry into DOM  -->
 <h3>Former Entries</h3>
 <li id="logDay" class="list-group-item"><strong></strong></li><br>
 
-<!-- page footer  -->
 <div class="footer">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center" id="links">
+    <div class="col-md-4 d-flex align-items-center" id="footLinks">
       <ol>
       <span class="text">&copy; Lake Frances Inc, 2025</span>
       <span class="text"></span>
-        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fccantrell2.github.io%2FdevGeorgeProject%2F" class="footer-link" target="_blank">Nu Validator</a>
-        <a href="https://wave.webaim.org/report#/https://ccantrell2.github.io/devGeorgeProject/" class="footer-link" target="_blank">WAVE</a>
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fccantrell2.github.io%2Fdev-charlie-project%2F" class="footer-link" target="_blank">Nu Validator</a>
+        <a href="https://wave.webaim.org/report#/https://ccantrell2.github.io/dev-charlie-project/" class="footer-link" target="_blank">WAVE</a>
     </ol>
     </div>  
   </footer>
