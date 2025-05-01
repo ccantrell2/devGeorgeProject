@@ -94,9 +94,7 @@ function displayLogData(logData) {
       console.log(logData);
     });
 
-}
-
-// applies username to nav bar
+   // applies username to nav bar
 $('#enterLogin').on('click', function() {
 console.log('button clicked');
 let uname = $('#username').val();
@@ -104,3 +102,4 @@ console.log(uname);
 $('#welcome').text('Welcome ' + uname);
 }); 
 
+}
