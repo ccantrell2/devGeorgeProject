@@ -22,7 +22,7 @@ fetch('data/logData.json')
     return response.json(); 
 })
 .then(data => {
-    //console.log(data);
+    console.log(data);
     displayLogData(data.logData);
 })
 .catch(error => {
